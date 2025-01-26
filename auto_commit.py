@@ -50,7 +50,7 @@ try:
     # Pull the latest changes from the remote repository
     log_message("Pulling latest changes from remote...")
     try:
-        origin.pull()
+        repo.git.pull()
         log_message("Pull successful.")
     except Exception as pull_error:
         log_message(f"Pull failed: {pull_error}")
